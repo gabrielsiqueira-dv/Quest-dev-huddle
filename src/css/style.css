@@ -6,7 +6,7 @@ body{
     background:url(../images/bg-desktop.svg) center center no-repeat;
     background-size: cover;
     background-color: var(--Violet);
- max-height: 100vh;
+ max-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
