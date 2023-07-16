@@ -1,0 +1,124 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background:url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+ max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 1280px;
+    max-width: 100%;
+}
+.container .logo{
+ margin-bottom: 50px;
+ width: 160px;   
+}
+
+img{
+    width: auto;
+}
+.container .section {
+    display: flex;
+
+    margin: 10px;
+
+}
+
+.container .section .content{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.container .section .content h1{
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+.container .section .content p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+.container .section .content a{
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    width: 200px;
+   text-align: center;
+    transition: 0.3s;
+}   
+.container .section .content a:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.container .social{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 10px;
+
+    
+}
+.container .social a{
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    justify-content: center;
+
+}
+.container .social a:hover{
+    border: 2px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+
+@media (max-width:768px){
+    body{
+        width: 400px;
+        margin: 30px auto;
+    }
+    img{
+        max-width: 100%;
+    }
+    .container .section{
+        flex-direction: column;
+    }
+    .container .section .content{
+        font-size: 2rem;
+        align-items: center;
+        margin: 0;
+        margin-top: 40px;
+       
+
+    }
+    .container .section .content a{}
+
+    .container .content a{
+        width: 50%;
+    }
+    .container .social{
+        justify-content: center;
+    }
+}
